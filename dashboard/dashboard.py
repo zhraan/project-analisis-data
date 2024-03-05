@@ -24,8 +24,8 @@ def create_weather_df(hour_df):
     }).reset_index()
     return weather_df
 
-data1_df = pd.read_csv('day_data.csv')
-data2_df = pd.read_csv('hour_data.csv')
+data1_df = pd.read_csv('https://raw.githubusercontent.com/zhraan/project-analisis-data/main/dashboard/day_data.csv')
+data2_df = pd.read_csv('https://raw.githubusercontent.com/zhraan/project-analisis-data/main/dashboard/hour_data.csv')
 
 min_date = data1_df["datetime"].min()
 max_date = data1_df["datetime"].max()
